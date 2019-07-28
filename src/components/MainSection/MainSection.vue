@@ -63,7 +63,7 @@ export default {
     };
   },
   methods: {
-    mnuBtn: function() {
+    mnuBtn() {
       this.isActive = !this.isActive
     }
   },

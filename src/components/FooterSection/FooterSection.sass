@@ -24,7 +24,7 @@
     max-width: 580px
     width: 100%
     border: none
-    height: 46px 
+    height: 50px 
     border-radius: 6px
     color: #898989
     font-size: 16px
@@ -46,8 +46,18 @@
     font-weight: 700
     text-transform: uppercase
     color: #010101
-    text-align: center 
+    text-align: center
+    ourline: none 
     cursor: pointer
+    border: 2px solid transparent
+    transition: all .2s linear
+    &:hover,
+    &:focus
+      outline: none
+      color: #fcdb00
+      background: transparent
+      border: 2px solid #fcdb00
+      transition: all .2s linear
 
 .has-error
   input
