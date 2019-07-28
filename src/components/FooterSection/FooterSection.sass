@@ -1,0 +1,85 @@
+.footer
+  background: #000
+
+.footer__title,
+.footer__subtitle
+  text-align: center 
+
+.footer__title
+  color: #fcdb00
+  padding: 96px 0 17px
+
+.footer__subtitle
+  max-width: 732px
+  margin: 0 auto 41px
+  color: #898989
+
+.subscription-form
+  display: flex
+  align-items: center
+  justify-content: space-between
+  max-width: 727px
+  margin: 0 auto
+  input 
+    max-width: 580px
+    width: 100%
+    border: none
+    height: 46px 
+    border-radius: 6px
+    color: #898989
+    font-size: 16px
+    padding: 0 24px
+    margin-right: 21px
+    outline: none
+    border: 2px solid transparent
+    transition: border .2s linear
+    &:focus
+      outline: none
+  button 
+    max-width: 126px
+    width: 100%
+    border: none
+    border-radius: 6px
+    background: #fcdb00
+    height: 50px
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    color: #010101
+    text-align: center 
+    cursor: pointer
+
+.has-error
+  input
+    border: 2px solid #d50000
+    transition: border .2s linear
+.has-success
+  input
+    border: 2px solid #00c853
+    transition: border .2s linear
+
+.footer-soc-icons
+  margin: 79px auto 134px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  max-width: 240px
+
+.footer-bottom
+  display: flex
+  justify-content: space-between
+  padding-bottom: 96px
+
+.footer-bottom-list 
+  .footer-contacts
+    li 
+      text-transform: uppercase
+  li,a
+    font-size: 16px
+    color: #fff
+  a
+    &:hover,
+    &:focus
+      color: #fcdb00
+    
+@import 'media'

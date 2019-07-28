@@ -55,40 +55,5 @@ export default {
 </script>
 
 <style lang="sass">
-
-.features__title,
-.features__subtitle
-  text-align: center
-
-.features__title
-  margin: 118px 0 17px
-
-.features__subtitle
-  margin: 0 auto 88px
-  max-width: 732px
-
-.features-list
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-
-.feature-item
-  display: flex
-  width: 100%
-  max-width: 277px
-  margin-right: 34px
-  margin-bottom: 88px
-  &:nth-of-type(3n)
-      margin-right: 0
-  img 
-    margin-right: 34px
-  span
-    display: block
-    margin-bottom: 15px
-  p 
-    color: #898989
-
-.feature-item-left
-  width: 25%
-
+@import 'TinyoneFeatures'
 </style>

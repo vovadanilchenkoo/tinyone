@@ -1,0 +1,58 @@
+@media (max-width: 768px)
+  .header 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: rgba(252, 219, 0, 0.78)
+    padding: 20px 30px
+    z-index: 2
+
+  .header-mnu-btn
+    display: flex 
+    align-items: center
+    border: none
+    background: none
+
+  .nav 
+    height: 0
+    overflow: hidden
+    position: absolute
+    top: 83px
+    left: 0
+    max-width: 100%
+    background: rgba(252, 219, 0, 0.78)
+    transition: height .2s linear
+
+  .nav-list
+    flex-direction: column
+
+  .nav-list__item
+    width: 100%
+    text-align: center
+  
+  .nav-list__link
+    display: block
+    padding: 10px 0
+    &:hover,
+    &:focus
+      background: #fde034
+
+  .carousel-wrap
+    padding: 0 15px
+    padding-top: 144px
+
+  .owl-carousel 
+    .owl-item 
+      .slide-right__img
+        display: none
+
+  .slide-left__txt
+    max-width: 430px
+
+@media (max-width: 440px)
+  .header-mnu-btn__txt
+    display: none
+  
+  .header-mnu-btn__icon 
+    margin-right: 0
