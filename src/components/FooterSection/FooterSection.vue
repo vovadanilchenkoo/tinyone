@@ -5,13 +5,12 @@
       h2.footer__subtitle {{data.subtitle}}
       
       form(
-        method="POST" 
+        method='POST'
         @submit='checkForm' 
         ref='subscriptionForm' 
-        action="https://formspree.io/"
         :class="['input-group subscription-form', isEmailValid()]" 
       )
-        input(type="email" name="email" v-model='email' placeholder="Enter your email to update")
+        input(required type="email" name="email" v-model='email' placeholder="Enter your email to update")
         textarea(hidden name='message') Привіт, це перевірка тестового завдання, яке зробив Володимир
         button(type="submit") Submit
       
@@ -83,8 +82,8 @@ export default {
   },
   methods: {
     isEmailValid() {
-      if( this.email == "" ) {
-        return "";
+      if( this.email == '' ) {
+        return '';
       } else {
         if( this.reg.test(this.email) ) {
           this.sendForm = true;
@@ -96,8 +95,8 @@ export default {
       }
     },
     checkForm(e) {
-      this.$refs.subscriptionForm.setAttribute('action', `https://formspree.io/${this.email}`);
       if(this.sendForm) {
+        this.$refs.subscriptionForm.setAttribute('action', `https://formspree.io/${this.email}`);
         return true;
       } else {
         e.preventDefault();
