@@ -1,6 +1,6 @@
 # vue-tz-vladimir-danilchenko
 
-> A Vue.js project
+> tinyone - https://vue-tz-vladimir-danilchenko228.firebaseapp.com/
 
 ## Build Setup
 
