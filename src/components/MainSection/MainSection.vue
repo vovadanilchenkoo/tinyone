@@ -3,7 +3,7 @@
     .container
       header.header(:class='{active: isActive}')
         div.logo
-          img(src='../../assets/img/fingerprint.png' alt='logo')
+          img(src='@/assets/img/fingerprint.png' alt='logo')
           span tinyone
         button(type='button' class='header-mnu-btn' @click='mnuBtn')
           span.header-mnu-btn__icon
@@ -15,50 +15,28 @@
               a(:href='item.link' class='nav-list__link') {{item.title}}
 
       carousel(:items='1' :nav='false' class='carousel-wrap')
-        .slide
+        .slide(v-for='slide in slider')
           .slide-left
-            h1.slide-left__title Inspire your inspiration
-            h2.slide-left__subtitle Simple to use for your app, products showcase and your inspiration
-            p.slide-left__txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit
+            h1.slide-left__title {{slide.title}}
+            h2.slide-left__subtitle {{slide.subtitle}}
+            p.slide-left__txt {{slide.txt}}
             .soc-icons 
-              img(src='../../assets/img/icon-fa-apple.png' alt='social icon')
-              img(src='../../assets/img/icon-fa-android.png' alt='social icon')
-              img(src='../../assets/img/icon-fa-windows.png' alt='social icon')
+              img(:src='require(`@/assets/img/${slide.icons[0]}`)' alt='social icon')
+              img(:src='require(`@/assets/img/${slide.icons[1]}`)' alt='social icon')
+              img(:src='require(`@/assets/img/${slide.icons[2]}`)' alt='social icon')
           .slide-right
-            img(class='slide-right__img' src='../../assets/img/tablet.jpg' alt='tablet image')
-        .slide
-          .slide-left
-            h1.slide-left__title Inspire your inspiration
-            h2.slide-left__subtitle Simple to use for your app, products showcase and your inspiration
-            p.slide-left__txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit
-            .soc-icons 
-              img(src='../../assets/img/icon-fa-apple.png' alt='social icon')
-              img(src='../../assets/img/icon-fa-android.png' alt='social icon')
-              img(src='../../assets/img/icon-fa-windows.png' alt='social icon')
-          .slide-right
-            img(class='slide-right__img' src='../../assets/img/tablet.jpg' alt='tablet image')
-        .slide
-          .slide-left
-            h1.slide-left__title Inspire your inspiration
-            h2.slide-left__subtitle Simple to use for your app, products showcase and your inspiration
-            p.slide-left__txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit
-            .soc-icons 
-              img(src='../../assets/img/icon-fa-apple.png' alt='social icon')
-              img(src='../../assets/img/icon-fa-android.png' alt='social icon')
-              img(src='../../assets/img/icon-fa-windows.png' alt='social icon')
-          .slide-right
-            img(class='slide-right__img' src='../../assets/img/tablet.jpg' alt='tablet image')
-
+            img(class='slide-right__img' :src='require(`@/assets/img/${slide.img}`)' alt='tablet image')
 </template>
 
 <script>
 import carousel from 'vue-owl-carousel';
-import data from '../../data/data.json';
+import data from '@/data/data.json';
 
 export default {
   data() {
     return {
       menu_items: data.main_section.menu_items,
+      slider: data.main_section.slider,
       isActive: false
     };
   },

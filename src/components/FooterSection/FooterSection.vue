@@ -16,13 +16,13 @@
       
       .footer-soc-icons
         a(href='##')
-          img(src='../../assets/img/facebook_ico.png' alt='facebook icon')
+          img(src='@/assets/img/facebook_ico.png' alt='facebook icon')
         a(href='##')
-          img(src='../../assets/img/twitter_ico.png' alt='twitter icon')
+          img(src='@/assets/img/twitter_ico.png' alt='twitter icon')
         a(href='##')
-          img(src='../../assets/img/google_+_ico.png' alt='google+ icon')
+          img(src='@/assets/img/google_+_ico.png' alt='google+ icon')
         a(href='##')
-          img(src='../../assets/img/pinterest_ico.png' alt='pinterest icon')
+          img(src='@/assets/img/pinterest_ico.png' alt='pinterest icon')
 
       .footer-bottom
         .footer-contacts
@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import data from '../../data/data.json';
+import data from '@/data/data.json';
 
 export default {
   data() {

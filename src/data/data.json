@@ -13,9 +13,64 @@
         "link": "#blog",
         "title": "Blog"
       }
+    ],
+    "slider": [
+      {
+        "title": "Inspire your inspiration",
+        "subtitle": "Simple to use for your app, products showcase and your inspiration",
+        "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit",
+        "icons": ["icon-fa-apple.png", "icon-fa-android.png", "icon-fa-windows.png"],
+        "img": "tablet.jpg"
+      },
+      {
+        "title": "Inspire your inspiration",
+        "subtitle": "Simple to use for your app, products showcase and your inspiration",
+        "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit",
+        "icons": ["icon-fa-apple.png", "icon-fa-android.png", "icon-fa-windows.png"],
+        "img": "tablet.jpg"
+      },
+      {
+        "title": "Inspire your inspiration",
+        "subtitle": "Simple to use for your app, products showcase and your inspiration",
+        "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit",
+        "icons": ["icon-fa-apple.png", "icon-fa-android.png", "icon-fa-windows.png"],
+        "img": "tablet.jpg"
+      }
     ]
   },
   "features_title": "Tinyone features",
+  "features": [
+    {
+      "url": "icon-font-1.png",
+      "title": "Fully Responsive", 
+      "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    {
+      "url": "icon-font-2.png",
+      "title": "Fully Layered PSD", 
+      "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    {
+      "url": "icon-font-3.png",
+      "title": "Font Awesome Icons", 
+      "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    {
+      "url": "icon-font-4.png",
+      "title": "HTML3 & CSS3", 
+      "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    {
+      "url": "icon-font-5.png",
+      "title": "Email Template", 
+      "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    },
+    {
+      "url": "icon-font-6.png",
+      "title": "Free to download", 
+      "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+    }
+  ],
   "footer_title": "Keep in touch with us",
   "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis."
 }
